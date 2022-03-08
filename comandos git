@@ -1,0 +1,38 @@
+12 git clone https://github.com/jmllamasg/calculadora.git directorio_de_destino
+
+13 cd calculadora/src/calculadora/; nano Calculadora.java
+
+14 
+git add Calculadora.java 
+git commit -m "cambio desde la consola" -> error
+git config --global user.email correo@del_usuario <- esto lo dice git en el error anterior
+git config --global user.name Tu_Nombre
+git commit -m "cambio desde la consola" 
+git push
+
+15 git pull
+
+16 git checkout Calculadora.java. Si se vuelve a hacer pull, dice “Ya está actualizado.”
+
+17 git branch rama2
+
+18
+git checkout rama2 -> cambio a esta rama
+git add Calculadora.java 
+git commit -m "rama2 desde la consola"
+git push --set-upstream origin rama2 <- esto lo dice git al hacer push por primera vez
+
+19 
+git add Calculadora.java 
+git commit -m "rama2 desde la consola"
+git push 
+
+22
+mkdir calculadora1;cd calculadora1
+La ayuda de GitHub al crear el repositorio:
+echo "# calculadora1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/jmllamasg/calculadora1.git
+git push -u origin master
